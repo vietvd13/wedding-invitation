@@ -3387,7 +3387,7 @@ p.center {
     z-index: 0;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(../images/flower-small.svg);
+    background-image: url(../images/wedding-photo/flower-small.svg);
     background-size: contain;
     -khtml-opacity: 0.2;
     -moz-opacity: 0.2;
@@ -3415,7 +3415,7 @@ p.center {
     z-index: 0;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(../images/flower-small.svg);
+    background-image: url(../images/wedding-photo/flower-small.svg);
     background-size: contain;
     -khtml-opacity: 0.2;
     -moz-opacity: 0.2;
@@ -6046,7 +6046,7 @@ textarea.form-control {
     z-index: -1;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(../images/flower-small.svg);
+    background-image: url(../images/wedding-photo/flower-small.svg);
     background-size: contain;
     -khtml-opacity: 0.5;
     -moz-opacity: 0.5;
