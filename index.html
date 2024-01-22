@@ -513,69 +513,30 @@
                         <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2  col-xxl-6 offset-xxl-3">
                             <div class="form-wrapper flowers neela-style">
                                 <h1 class="section-title">Sổ Lưu Bút</h1>
-                                <form id="wish-form" class="form validate-rsvp-form row" method="post">
+
+                                <div id="alertSuccess" class="alert alert-success mb-4" role="alert" style="display: none;">
+                                    Bạn đã gửi lời chúc thành công!
+                                </div>
+
+                                <div id="alertError" class="alert alert-danger mb-4" role="alert" style="display: none;">
+                                    
+                                </div>
+
+                                <form id="wish-form" class="form validate-rsvp-form row">
                                     <div>
-                                        <input type="text" name="name" placeholder="Tên của bạn*" class="form-control">
+                                        <input type="text" name="name" placeholder="Tên của bạn" class="form-control">
                                     </div>
                                     <div>
-                                        <textarea rows='3' class="form-control" name="content" placeholder="Nhập lời chúc của bạn*"></textarea>
+                                        <textarea rows="3" class="form-control" name="content" placeholder="Nhập lời chúc của bạn"></textarea>
                                     </div>
                                     <div class="center">
-                                        <button type="submit" class="btn btn-primary submit_form">Gửi lời chúc</button>
+                                        <div id="btnSendWish" class="btn btn-primary submit_form">Gửi lời chúc</div>
                                     </div>
                                 </form>
-                                <div class="wish-box">
-                                    <div class="wish-box-item">
-                                        <strong>Nguyễn Văn A</strong>
-                                        <p>Sunt do ipsum nisi ex nulla et anim commodo sit Lorem aliqua sint. Adipisicing officia minim sunt eu. Officia proident incididunt amet do mollit quis minim aliqua eiusmod magna adipisicing qui. Nisi minim id velit ullamco nisi anim nostrud esse. Ullamco irure ut magna ea magna. Cillum Lorem aliquip eiusmod cupidatat excepteur cupidatat Lorem nisi deserunt excepteur Lorem ipsum fugiat. Eiusmod minim incididunt est enim ut Lorem deserunt eiusmod culpa magna cupidatat mollit sint incididunt.</p>
-                                    </div>
-                                    <div class="wish-box-item">
-                                        <strong>Nguyễn Văn A</strong>
-                                        <p>Sunt do ipsum nisi ex nulla et anim commodo sit Lorem aliqua sint. Adipisicing officia minim sunt eu. Officia proident incididunt amet do mollit quis minim aliqua eiusmod magna adipisicing qui. Nisi minim id velit ullamco nisi anim nostrud esse. Ullamco irure ut magna ea magna. Cillum Lorem aliquip eiusmod cupidatat excepteur cupidatat Lorem nisi deserunt excepteur Lorem ipsum fugiat. Eiusmod minim incididunt est enim ut Lorem deserunt eiusmod culpa magna cupidatat mollit sint incididunt.</p>
-                                    </div>
-                                    <div class="wish-box-item">
-                                        <strong>Nguyễn Văn A</strong>
-                                        <p>Sunt do ipsum nisi ex nulla et anim commodo sit Lorem aliqua sint. Adipisicing officia minim sunt eu. Officia proident incididunt amet do mollit quis minim aliqua eiusmod magna adipisicing qui. Nisi minim id velit ullamco nisi anim nostrud esse. Ullamco irure ut magna ea magna. Cillum Lorem aliquip eiusmod cupidatat excepteur cupidatat Lorem nisi deserunt excepteur Lorem ipsum fugiat. Eiusmod minim incididunt est enim ut Lorem deserunt eiusmod culpa magna cupidatat mollit sint incididunt.</p>
-                                    </div>
-                                    <div class="wish-box-item">
-                                        <strong>Nguyễn Văn A</strong>
-                                        <p>Sunt do ipsum nisi ex nulla et anim commodo sit Lorem aliqua sint. Adipisicing officia minim sunt eu. Officia proident incididunt amet do mollit quis minim aliqua eiusmod magna adipisicing qui. Nisi minim id velit ullamco nisi anim nostrud esse. Ullamco irure ut magna ea magna. Cillum Lorem aliquip eiusmod cupidatat excepteur cupidatat Lorem nisi deserunt excepteur Lorem ipsum fugiat. Eiusmod minim incididunt est enim ut Lorem deserunt eiusmod culpa magna cupidatat mollit sint incididunt.</p>
-                                    </div>
-                                    <div class="wish-box-item">
-                                        <strong>Nguyễn Văn A</strong>
-                                        <p>Sunt do ipsum nisi ex nulla et anim commodo sit Lorem aliqua sint. Adipisicing officia minim sunt eu. Officia proident incididunt amet do mollit quis minim aliqua eiusmod magna adipisicing qui. Nisi minim id velit ullamco nisi anim nostrud esse. Ullamco irure ut magna ea magna. Cillum Lorem aliquip eiusmod cupidatat excepteur cupidatat Lorem nisi deserunt excepteur Lorem ipsum fugiat. Eiusmod minim incididunt est enim ut Lorem deserunt eiusmod culpa magna cupidatat mollit sint incididunt.</p>
-                                    </div>
-                                    <div class="wish-box-item">
-                                        <strong>Nguyễn Văn A</strong>
-                                        <p>Sunt do ipsum nisi ex nulla et anim commodo sit Lorem aliqua sint. Adipisicing officia minim sunt eu. Officia proident incididunt amet do mollit quis minim aliqua eiusmod magna adipisicing qui. Nisi minim id velit ullamco nisi anim nostrud esse. Ullamco irure ut magna ea magna. Cillum Lorem aliquip eiusmod cupidatat excepteur cupidatat Lorem nisi deserunt excepteur Lorem ipsum fugiat. Eiusmod minim incididunt est enim ut Lorem deserunt eiusmod culpa magna cupidatat mollit sint incididunt.</p>
-                                    </div>
-                                    <div class="wish-box-item">
-                                        <strong>Nguyễn Văn A</strong>
-                                        <p>Sunt do ipsum nisi ex nulla et anim commodo sit Lorem aliqua sint. Adipisicing officia minim sunt eu. Officia proident incididunt amet do mollit quis minim aliqua eiusmod magna adipisicing qui. Nisi minim id velit ullamco nisi anim nostrud esse. Ullamco irure ut magna ea magna. Cillum Lorem aliquip eiusmod cupidatat excepteur cupidatat Lorem nisi deserunt excepteur Lorem ipsum fugiat. Eiusmod minim incididunt est enim ut Lorem deserunt eiusmod culpa magna cupidatat mollit sint incididunt.</p>
-                                    </div>
-                                    <div class="wish-box-item">
-                                        <strong>Nguyễn Văn A</strong>
-                                        <p>Sunt do ipsum nisi ex nulla et anim commodo sit Lorem aliqua sint. Adipisicing officia minim sunt eu. Officia proident incididunt amet do mollit quis minim aliqua eiusmod magna adipisicing qui. Nisi minim id velit ullamco nisi anim nostrud esse. Ullamco irure ut magna ea magna. Cillum Lorem aliquip eiusmod cupidatat excepteur cupidatat Lorem nisi deserunt excepteur Lorem ipsum fugiat. Eiusmod minim incididunt est enim ut Lorem deserunt eiusmod culpa magna cupidatat mollit sint incididunt.</p>
-                                    </div>
-                                    <div class="wish-box-item">
-                                        <strong>Nguyễn Văn A</strong>
-                                        <p>Sunt do ipsum nisi ex nulla et anim commodo sit Lorem aliqua sint. Adipisicing officia minim sunt eu. Officia proident incididunt amet do mollit quis minim aliqua eiusmod magna adipisicing qui. Nisi minim id velit ullamco nisi anim nostrud esse. Ullamco irure ut magna ea magna. Cillum Lorem aliquip eiusmod cupidatat excepteur cupidatat Lorem nisi deserunt excepteur Lorem ipsum fugiat. Eiusmod minim incididunt est enim ut Lorem deserunt eiusmod culpa magna cupidatat mollit sint incididunt.</p>
-                                    </div>
-                                    <div class="wish-box-item">
-                                        <strong>Nguyễn Văn A</strong>
-                                        <p>Sunt do ipsum nisi ex nulla et anim commodo sit Lorem aliqua sint. Adipisicing officia minim sunt eu. Officia proident incididunt amet do mollit quis minim aliqua eiusmod magna adipisicing qui. Nisi minim id velit ullamco nisi anim nostrud esse. Ullamco irure ut magna ea magna. Cillum Lorem aliquip eiusmod cupidatat excepteur cupidatat Lorem nisi deserunt excepteur Lorem ipsum fugiat. Eiusmod minim incididunt est enim ut Lorem deserunt eiusmod culpa magna cupidatat mollit sint incididunt.</p>
-                                    </div>
-                                    <div class="wish-box-item">
-                                        <strong>Nguyễn Văn A</strong>
-                                        <p>Sunt do ipsum nisi ex nulla et anim commodo sit Lorem aliqua sint. Adipisicing officia minim sunt eu. Officia proident incididunt amet do mollit quis minim aliqua eiusmod magna adipisicing qui. Nisi minim id velit ullamco nisi anim nostrud esse. Ullamco irure ut magna ea magna. Cillum Lorem aliquip eiusmod cupidatat excepteur cupidatat Lorem nisi deserunt excepteur Lorem ipsum fugiat. Eiusmod minim incididunt est enim ut Lorem deserunt eiusmod culpa magna cupidatat mollit sint incididunt.</p>
-                                    </div>
-                                    <div class="wish-box-item">
-                                        <strong>Nguyễn Văn A</strong>
-                                        <p>Sunt do ipsum nisi ex nulla et anim commodo sit Lorem aliqua sint. Adipisicing officia minim sunt eu. Officia proident incididunt amet do mollit quis minim aliqua eiusmod magna adipisicing qui. Nisi minim id velit ullamco nisi anim nostrud esse. Ullamco irure ut magna ea magna. Cillum Lorem aliquip eiusmod cupidatat excepteur cupidatat Lorem nisi deserunt excepteur Lorem ipsum fugiat. Eiusmod minim incididunt est enim ut Lorem deserunt eiusmod culpa magna cupidatat mollit sint incididunt.</p>
-                                    </div>
-                                    <div class="wish-box-item">
-                                        <strong>Nguyễn Văn A</strong>
-                                        <p>Sunt do ipsum nisi ex nulla et anim commodo sit Lorem aliqua sint. Adipisicing officia minim sunt eu. Officia proident incididunt amet do mollit quis minim aliqua eiusmod magna adipisicing qui. Nisi minim id velit ullamco nisi anim nostrud esse. Ullamco irure ut magna ea magna. Cillum Lorem aliquip eiusmod cupidatat excepteur cupidatat Lorem nisi deserunt excepteur Lorem ipsum fugiat. Eiusmod minim incididunt est enim ut Lorem deserunt eiusmod culpa magna cupidatat mollit sint incididunt.</p>
+
+                                <div id="wish-box" class="wish-box">
+                                    <div style="text-align: center;">
+                                        <p>Hiện chưa có lời chúc</p>
                                     </div>
                                 </div>
                             </div>
@@ -668,5 +629,6 @@
         <script src="./js/template.settings.js"></script>
         <script src="./js/calendar.js"></script>
         <script src="./js/bii.js"></script>
+        <script src="./js/loadMessage.js"></script>
     </body>
 </html>

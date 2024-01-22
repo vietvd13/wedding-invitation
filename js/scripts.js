@@ -46,8 +46,8 @@ var Neela;
         },
         preloader: function () {
             var e = setInterval(function () {
-                /loaded|complete/.test(document.readyState) && (clearInterval(e), u("#preloader").fadeOut(1e3))
-            }, 4)
+                /loaded|complete/.test(document.readyState) && (clearInterval(e), u("#preloader").fadeOut(1e3));
+            }, 4);
         },
         navigation: function () {
             u(".nav li a").on("click", function (e) {
@@ -384,87 +384,7 @@ var Neela;
             }).resize()
         },
         contactForm: function () {
-            if ($("#wish-form").length) {
-                // $(".wish-box").niceScroll({
-                //       // cursorcolor: "#fff",
-                //       // cursorwidth: "0px",
-                //       // background: "#fff",
-                //       cursorborder: "0px solid #1F2326",
-                //       zindex: "999",
-                //       preservenativescrolling: true,
-                //       cursordragontouch: true,
-                //       disablemutationobserver: true,
-                //       // autohidemode: !1,
-                //       // enablemousewheel: !1,
-                //       // touchbehavior: !0
-                //   });
-                $("#wish-form").validate({
-                    rules: {
-                        name: {
-                            required: true,
-                            minlength: 5
-                        },
-                        content: {
-                            required: true,
-                            minlength: 10
-                        },
-                        email: {
-                            required: false,
-                            email: true
-                        },
-                    },
 
-                    messages: {
-                        name: {
-                            required: 'Vui lòng nhập tên của bạn',
-                            minlength: 'Tên phải tối thiểu là 5 ký tự',
-                        },
-                        content: {
-                            required: 'Vui lòng nhập lời chúc',
-                            minlength: 'Lời chúc tối thiểu là 10 ký tự',
-                        },
-                        email: {
-                            email: 'Địa chỉ email không hợp lệ'
-                        }
-                    },
-
-                    submitHandler: function (form) {
-                        $("#loader").css("display", "inline-block");
-                        $.ajax({
-                            type: "POST",
-                            url: "/wish",
-                            data: $(form).serialize(),
-                            success: function (res) {
-                                $("#loader").hide();
-                                if (!res.error) {
-                                    $('.wish-box').scrollTop(0);
-                                    $('.wish-box').prepend('<div class="wish-box-item"><strong>' + $(form).find("input[name='name']").val().replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;") + '</strong><p>' + $(form).find("textarea[name='content']").val().replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;") + '</p></div>');
-                                    $("#success").html(res.message).slideDown("slow");
-                                    setTimeout(function () {
-                                        $("#success").slideUp("slow");
-                                    }, 5000);
-                                } else {
-                                    $("#error").html(res.message).slideDown("slow");
-                                    setTimeout(function () {
-                                        $("#error").slideUp("slow");
-                                    }, 5000);
-                                }
-
-                                form.reset();
-                            },
-                            error: function () {
-                                $("#loader").hide();
-                                $("#error").slideDown("slow");
-                                setTimeout(function () {
-                                    $("#error").slideUp("slow");
-                                }, 5000);
-                            }
-                        });
-                        return false;
-                    }
-
-                });
-            }
         },
         showError: function (e = "") {
 
