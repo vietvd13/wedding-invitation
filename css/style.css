@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+:root {
+    --fancybox-zIndex: 99999999999999;
+}
+
 #footer .copyright a,
 .blog-listing .item .blog-meta li a,
 .blog-listing .post-content .blog-meta li a,
