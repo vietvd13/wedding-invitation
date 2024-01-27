@@ -563,10 +563,8 @@ var Neela;
         = ACTIVE POPUP IMAGE
     -------------------------------------------*/
     if ($(".fancybox").length) {
-        $(".fancybox").fancybox({
-            openEffect: "elastic",
-            closeEffect: "elastic",
-            wrapCSS: "project-fancybox-title-style"
+        Fancybox.bind("[data-fancybox]", {
+            //
         });
     }
 
